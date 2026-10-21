@@ -1,0 +1,65 @@
+
+body {
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+    color: #253047;
+}
+
+h1 {
+    font-weight: 700;
+    color: #253b70;
+}
+
+.todo-card {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3 {
+    color: #315bd6;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    margin-bottom: 0;
+    color: #667085;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e9edf3;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #8992a3;
+}
+
+@media (max-width: 576px) {
+    .task-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .todo-card {
+        padding: 18px;
+    }
+}
